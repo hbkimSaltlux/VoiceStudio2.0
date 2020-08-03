@@ -1,5 +1,5 @@
-from core.saltlux.preprocess import FirstPreprocess, SecondPreprocess, TestResource
-from core.saltlux.train import TransferLearning
+from core.saltlux.preprocess import Prepare
+from core.saltlux.resource import CommonResource, DataResource, PreprocessResource
 
 
 class SaltluxSttCore():
@@ -26,10 +26,15 @@ class SaltluxSttCore():
 def _get_available_restfuls():
     restfuls = {}
 
-    testResource = TestResource()
+    common_resource = CommonResource()
 
-    restfuls['/preprocess/first'] = FirstPreprocess(testResource)
-    restfuls['/preprocess/dummy/second'] = SecondPreprocess(testResource)
-    restfuls['/train/start'] = TransferLearning(testResource)
+    data_dir = common_resource.data_dir
+    preprocess_dir = common_resource.preprocess_dir
+    preprocess_config = common_resource.preprocess_config
+
+    data_resource = DataResource(data_dir)
+    preprocess_resource = PreprocessResource(preprocess_dir, preprocess_config)
+
+    restfuls['/preprocess/prepare'] = Prepare(data_resource=data_resource, preprocess_resource=preprocess_resource)
 
     return restfuls

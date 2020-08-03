@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../VoiceStudio/.idea/VoiceStudio.iml" filepath="$PROJECT_DIR$/../VoiceStudio/.idea/VoiceStudio.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/VoiceStudio2.0.iml" filepath="$PROJECT_DIR$/.idea/VoiceStudio2.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/../VoiceStudio2.0_remote/.idea/VoiceStudio2.0_remote.iml" filepath="$PROJECT_DIR$/../VoiceStudio2.0_remote/.idea/VoiceStudio2.0_remote.iml" />
       <module fileurl="file://$PROJECT_DIR$/../VoiceStudio2.0_sample/.idea/VoiceStudio2.0_sample.iml" filepath="$PROJECT_DIR$/../VoiceStudio2.0_sample/.idea/VoiceStudio2.0_sample.iml" />

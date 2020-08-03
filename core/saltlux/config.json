@@ -1,0 +1,19 @@
+{
+  "directories": {
+    "database_dir": "database",
+    "data_dir": "data",
+    "preprocess_dir": "preprocess"
+  },
+  "preprocess": {
+    "prepare": {
+      "docker": {
+        "image": "voice.studio.am.predata:0.0.5",
+        "dataset_dir": "/home/datasets",
+        "preprocess_dir": "/home/preDatasets",
+        "working_dir": "/home/release.kor_8k.lstm_train_env.2019.0408/LSTM_Adapt_Env/align_env/",
+        "run_script": "process1.pl"
+      }
+    }
+  }
+
+}

@@ -6,8 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="VoiceStudio2.0_sample" />
     <orderEntry type="module" module-name="VoiceStudio2.0_remote" />
-  </component>
-  <component name="TestRunnerService">
-    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+    <orderEntry type="module" module-name="VoiceStudio" />
   </component>
 </module>
